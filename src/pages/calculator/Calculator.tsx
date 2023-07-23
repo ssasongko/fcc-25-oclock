@@ -1,18 +1,14 @@
+import CalculatorHead from "../../fragments/calculator/CalculatorHead";
+
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 import { FaPause, FaPlay } from "react-icons/fa";
 import { GrPowerReset } from "react-icons/gr";
-import { FcAlarmClock } from "react-icons/fc";
 
 const Calculator = () => {
   return (
     <div className="h-screen flex flex-col gap-3 items-center justify-center bg-slate-400">
       <div className="flex flex-col gap-5 bg-white rounded-lg shadow-md p-5 text-black">
-        <div className="flex justify-center items-center gap-3">
-          <FcAlarmClock className="text-4xl" />
-          <h1 className="text-2xl font-bold text-center">
-            Pomodoro
-          </h1>
-        </div>
+        <CalculatorHead /> 
         <div className="flex items-center justify-between gap-8">
           <div className="flex flex-col gap-2 justify-center">
             <p id="break-label">Break Length</p>
