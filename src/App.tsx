@@ -1,11 +1,9 @@
-import './App.css'
+import Calculator from "./pages/calculator/Calculator"
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <Calculator />
     </>
   )
 }
