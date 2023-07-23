@@ -5,6 +5,7 @@ import CalculatorHead from "@/fragments/calculator/CalculatorHead";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 import { FaPause, FaPlay } from "react-icons/fa";
 import { GrPowerReset } from "react-icons/gr";
+import About from "@/components/About";
 
 
 const Calculator = () => {
@@ -135,8 +136,10 @@ const Calculator = () => {
           </button>
         </div>
       </div>
+      
+      <About />
 
-      {/* <audio controlid="beep" src="" /> */}
+
       <audio id="beep" ref={audioPlayer} controls className="hidden">
         <source src="../assets/sound/beep.mp3" type="audio/mp3"/>
       </audio>
